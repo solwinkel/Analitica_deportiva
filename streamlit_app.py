@@ -59,9 +59,6 @@ for target in targets:
 
     X_train = train_df[features]
     y_train = train_df[target]
-#     final_model = XGBRegressor(**best_params, random_state=42)
-#     final_model.fit(X_train, y_train)
-#     final_model.save_model(f'modelo_xgboost_{target}.json')
 
 def confidence_interval(predictions, confidence=0.99, n_bootstraps=1000):
     bootstrapped_means = []
